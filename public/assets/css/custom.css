@@ -1,0 +1,8 @@
+.dt-buttons button{
+    background-color: white;
+    border: none;
+}
+
+.pagination{
+    float: right;
+}
