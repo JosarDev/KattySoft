@@ -12,7 +12,7 @@ Archivos
 <?php $this->section('content'); ?>
 
 <!-- Descomentar o Comentar para la funcion de subir archivos en carpetas compartidas-->
-<div class="card">
+<!-- <div class="card">
     <div class="card-body">
         <h4 class="card-title">Subir Archivos</h4>
         <hr>
@@ -20,7 +20,7 @@ Archivos
             <input type="hidden" value="<?= $carpeta['carpeta_id']; ?>" id="carpeta_id" name="carpeta_id">
         </form>
     </div>
-</div>
+</div> -->
 
 <div class="card">
     <div class="card-body">
