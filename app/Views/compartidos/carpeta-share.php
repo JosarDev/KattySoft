@@ -12,15 +12,25 @@ Archivos
 <?php $this->section('content'); ?>
 
 <!-- Descomentar o Comentar para la funcion de subir archivos en carpetas compartidas-->
-<!-- <div class="card">
+<div class="card">
     <div class="card-body">
         <h4 class="card-title">Subir Archivos</h4>
         <hr>
-        <form action="<?= base_url('archivos/upload'); ?>" id="upload-form" class="dropzone">
-            <input type="hidden" value="<?= $carpeta['carpeta_id']; ?>" id="carpeta_id" name="carpeta_id">
-        </form>
+        <?php 
+            // Definir roles que no tienen permiso para subir archivos
+            $rolesSinPermiso = [2]; // 2 = Invitado
+
+            // Verificar si el rol del usuario está en el array de roles sin permiso
+            if (!in_array($_SESSION['rol'], $rolesSinPermiso)): 
+        ?>
+            <form action="<?= base_url('archivos/upload'); ?>" id="upload-form" class="dropzone">
+                <input type="hidden" value="<?= $carpeta['carpeta_id']; ?>" id="carpeta_id" name="carpeta_id">
+            </form>
+        <?php else: ?>
+            <p class="text-danger">No tienes permisos para subir archivos.</p>
+        <?php endif; ?>
     </div>
-</div> -->
+</div>
 
 <div class="card">
     <div class="card-body">
