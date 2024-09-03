@@ -2,6 +2,7 @@
 /vendor/
 
 # Ignorar archivos y carpetas generados por la aplicación
+public/assets/uploads/
 /writable/debugbar/
 /writable/logs/
 /writable/session/
