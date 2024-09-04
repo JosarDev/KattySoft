@@ -17,7 +17,7 @@
     <!-- Bootstrap CSS -->
     <link href="<?= base_url('assets/'); ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/bootstrap-extended.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="<?= base_url('assets/'); ?>css/fontGoogleApi.css" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/app.css" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/icons.css" rel="stylesheet">
     <!-- Theme Style CSS -->
